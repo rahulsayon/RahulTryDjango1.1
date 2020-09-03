@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> About </h1>
+
+<p> {{ details }} </p>
+
+<p> {{ list }} </p>
+{%  for sub_list in list %}
+  <p>{{ forloop.counter }} {{  sub_list }} </p>
+{% endfor %}
+    
+{% endblock %}
